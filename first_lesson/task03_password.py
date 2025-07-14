@@ -1,28 +1,28 @@
 # Да се създаде програма, която проверява входните данни.
 
-name = input("Моля, въведете потребителско име: ")
-password = input("Моля, въведете парола: ")
+name = input("Please enter username: ")
+password = input("Please enter password: ")
 
 while True:
-    name_user = input("Моля, въведете потребителско име: ")
-    pass_user = input("Моля, въведете парола: ")
+    name_user = input("Please enter username: ")
+    pass_user = input("Please enter password: ")
     if name_user != name:
         while name_user != name:
-            name_user = input("Грешно потребителско име: ")
+            name_user = input("Wrong username: ")
         if pass_user == password:
-            print("Добре дошъл, " + name)
+            print("Welcome " + name)
             break
         else:
             while pass_user != password:
-                pass_user = input("Грешна парола: ")
+                pass_user = input("Wrong password: ")
             print("Добре дошъл, " + name)
             break
     else:
         if pass_user == password:
-            print("Добре дошъл, " + name)
+            print("Welcome " + name)
             break
         else:
             while pass_user != password:
-                pass_user = input("Грешна парола: ")
-            print("Добре дошъл, " + name)
+                pass_user = input("Wrong password: ")
+            print("Welcome " + name)
             break
